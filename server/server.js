@@ -2,11 +2,7 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
-var swaggerUi = require('swaggerize-ui');
 
-app.use('/docs', swaggerUi({
-  docs: '/swagger'  
-}));
 
 app.start = function() {
   // start the web server
