@@ -1,7 +1,7 @@
 {
   "name": "Hangman",
   "version": "0.0.0",
-  "main": "app.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node ."
   },
