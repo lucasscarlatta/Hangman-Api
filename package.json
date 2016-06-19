@@ -16,6 +16,6 @@
   "optionalDependencies": {
     "loopback-component-explorer": "^2.1.0"
   },
-  "devDependencies": 
+  "devDependencies": {
   }
 }
