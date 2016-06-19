@@ -2,6 +2,11 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
+var swaggerUi = require('swaggerize-ui');
+
+app.use('/docs', swaggerUi({
+  docs: '/swagger'  
+}));
 
 app.start = function() {
   // start the web server
@@ -16,13 +21,14 @@ app.start = function() {
   });
 };
 
+
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
   if (err) throw err;
 
   require('./push-demo')(app);
-
+	
   // start the server if `$ node server.js`
   if (require.main === module)
     app.start();
