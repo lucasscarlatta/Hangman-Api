@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "main": "server/server.js",
   "scripts": {
-    "install": "bower install",
     "start": "node ."
   },
   "dependencies": {
@@ -12,13 +11,11 @@
     "loopback": "^2.18.0",
     "loopback-boot": "^2.7.1",
     "loopback-component-push": "^1.5.1",
-    "loopback-connector-mongodb": "^1.8.0",
     "serve-favicon": "^2.2.1"
   },
   "optionalDependencies": {
     "loopback-component-explorer": "^2.1.0"
   },
-  "devDependencies": {
-    "bower": "^1.4.1"
+  "devDependencies": 
   }
 }
